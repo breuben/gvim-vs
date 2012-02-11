@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D2B6C6EF-91FB-42CB-95EA-04FB4B9B3006}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>gvim</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>gvim64</TargetName>
+    <OutDir>D:\projects\vim\src\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;WINVER=0x0500;_WIN32_WINNT=0x0500;FEAT_BIG;FEAT_CSCOPE;FEAT_NETBEANS_INTG;FEAT_MBYTE_IME;FEAT_MBYTE;FEAT_GUI_W32;DYNAMIC_IME;DYNAMIC_ICONV;DYNAMIC_GETTEXT;HAVE_PATHDEF;NDEBUG</PreprocessorDefinitions>
+      <CompileAs>CompileAsC</CompileAs>
+      <AdditionalIncludeDirectories>$(ProjectDir)\proto</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>oldnames.lib;kernel32.lib;advapi32.lib;shell32.lib;gdi32.lib;comdlg32.lib;ole32.lib;uuid.lib;version.lib;winspool.lib;comctl32.lib;libcmtd.lib;user32.lib;WSock32.lib</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+    </Link>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;WINVER=0X0500;FEAT_GUI_W32</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>HAVE_PATHDEF;FEAT_CSCOPE;WIN32;WINVER=0x0500;_WIN32_WINNT=0x0500;FEAT_BIG;FEAT_NETBEANS_INTG;FEAT_MBYTE_IME;FEAT_MBYTE;FEAT_GUI_W32;DYNAMIC_IME;DYNAMIC_ICONV;DYNAMIC_GETTEXT;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAs>CompileAsC</CompileAs>
+      <AdditionalIncludeDirectories>$(ProjectDir)\proto</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>oldnames.lib;kernel32.lib;advapi32.lib;shell32.lib;gdi32.lib;comdlg32.lib;ole32.lib;uuid.lib;version.lib;winspool.lib;comctl32.lib;libcmtd.lib;user32.lib;WSock32.lib</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+    </Link>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;WINVER=0X0500;FEAT_GUI_W32</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;WINVER=0x0500;_WIN32_WINNT=0x0500;FEAT_BIG;FEAT_CSCOPE;FEAT_NETBEANS_INTG;FEAT_MBYTE_IME;FEAT_MBYTE;FEAT_GUI_W32;DYNAMIC_IME;DYNAMIC_ICONV;DYNAMIC_GETTEXT;HAVE_PATHDEF;NDEBUG</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <ExceptionHandling>false</ExceptionHandling>
+      <CompileAs>CompileAsC</CompileAs>
+      <AdditionalIncludeDirectories>$(ProjectDir)\proto</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>oldnames.lib;kernel32.lib;advapi32.lib;shell32.lib;gdi32.lib;comdlg32.lib;ole32.lib;uuid.lib;version.lib;winspool.lib;comctl32.lib;libcmt.lib;user32.lib;WSock32.lib</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+    </Link>
+    <Manifest>
+      <EnableDPIAwareness>true</EnableDPIAwareness>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;WINVER#0x0500;_WIN32_WINNT#0x0600;_WIN32_IE#0x0500;FEAT_BIG;FEAT_CSCOPE;FEAT_NETBEANS_INTG;FEAT_MBYTE_IME;FEAT_MBYTE;FEAT_GUI_W32;DYNAMIC_IME;DYNAMIC_ICONV;DYNAMIC_GETTEXT;HAVE_PATHDEF;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <ExceptionHandling>false</ExceptionHandling>
+      <AdditionalIncludeDirectories>$(ProjectDir)\proto</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>false</OptimizeReferences>
+      <AdditionalDependencies>oldnames.lib;kernel32.lib;advapi32.lib;shell32.lib;gdi32.lib;comdlg32.lib;ole32.lib;uuid.lib;version.lib;winspool.lib;comctl32.lib;libcmt.lib;user32.lib;WSock32.lib</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+    </Link>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WIN32;WINVER=0x0500;NDEBUG;FEAT_GUI_W32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="arabic.h" />
+    <ClInclude Include="ascii.h" />
+    <ClInclude Include="ex_cmds.h" />
+    <ClInclude Include="farsi.h" />
+    <ClInclude Include="feature.h" />
+    <ClInclude Include="globals.h" />
+    <ClInclude Include="gui.h" />
+    <ClInclude Include="gui_beval.h" />
+    <ClInclude Include="gui_w32_rc.h" />
+    <ClInclude Include="if_cscope.h" />
+    <ClInclude Include="keymap.h" />
+    <ClInclude Include="macros.h" />
+    <ClInclude Include="option.h" />
+    <ClInclude Include="os_dos.h" />
+    <ClInclude Include="os_win32.h" />
+    <ClInclude Include="proto.h" />
+    <ClInclude Include="regexp.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="structs.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="term.h" />
+    <ClInclude Include="version.h" />
+    <ClInclude Include="vim.h" />
+    <ClInclude Include="vimio.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="blowfish.c" />
+    <ClCompile Include="buffer.c" />
+    <ClCompile Include="charset.c" />
+    <ClCompile Include="diff.c" />
+    <ClCompile Include="digraph.c" />
+    <ClCompile Include="edit.c" />
+    <ClCompile Include="eval.c" />
+    <ClCompile Include="ex_cmds.c" />
+    <ClCompile Include="ex_cmds2.c" />
+    <ClCompile Include="ex_docmd.c" />
+    <ClCompile Include="ex_eval.c" />
+    <ClCompile Include="ex_getln.c" />
+    <ClCompile Include="fileio.c" />
+    <ClCompile Include="fold.c" />
+    <ClCompile Include="getchar.c" />
+    <ClCompile Include="gui.c" />
+    <ClCompile Include="gui_beval.c" />
+    <ClCompile Include="gui_w32.c" />
+    <ClCompile Include="hardcopy.c" />
+    <ClCompile Include="hashtab.c" />
+    <ClCompile Include="if_cscope.c" />
+    <ClCompile Include="main.c" />
+    <ClCompile Include="mark.c" />
+    <ClCompile Include="mbyte.c" />
+    <ClCompile Include="memfile.c" />
+    <ClCompile Include="memline.c" />
+    <ClCompile Include="menu.c" />
+    <ClCompile Include="message.c" />
+    <ClCompile Include="misc1.c" />
+    <ClCompile Include="misc2.c" />
+    <ClCompile Include="move.c" />
+    <ClCompile Include="netbeans.c" />
+    <ClCompile Include="normal.c" />
+    <ClCompile Include="ops.c" />
+    <ClCompile Include="option.c" />
+    <ClCompile Include="os_mswin.c" />
+    <ClCompile Include="os_w32exe.c" />
+    <ClCompile Include="os_win32.c" />
+    <ClCompile Include="pathdef.c" />
+    <ClCompile Include="popupmnu.c" />
+    <ClCompile Include="quickfix.c" />
+    <ClCompile Include="regexp.c" />
+    <ClCompile Include="screen.c" />
+    <ClCompile Include="search.c" />
+    <ClCompile Include="sha256.c" />
+    <ClCompile Include="spell.c" />
+    <ClCompile Include="syntax.c" />
+    <ClCompile Include="tag.c" />
+    <ClCompile Include="term.c" />
+    <ClCompile Include="ui.c" />
+    <ClCompile Include="undo.c" />
+    <ClCompile Include="version.c" />
+    <ClCompile Include="window.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="proto\blowfish.pro" />
+    <None Include="proto\buffer.pro" />
+    <None Include="proto\charset.pro" />
+    <None Include="proto\diff.pro" />
+    <None Include="proto\digraph.pro" />
+    <None Include="proto\edit.pro" />
+    <None Include="proto\eval.pro" />
+    <None Include="proto\ex_cmds.pro" />
+    <None Include="proto\ex_cmds2.pro" />
+    <None Include="proto\ex_docmd.pro" />
+    <None Include="proto\ex_eval.pro" />
+    <None Include="proto\ex_getln.pro" />
+    <None Include="proto\fileio.pro" />
+    <None Include="proto\fold.pro" />
+    <None Include="proto\getchar.pro" />
+    <None Include="proto\gui.pro" />
+    <None Include="proto\gui_athena.pro" />
+    <None Include="proto\gui_beval.pro" />
+    <None Include="proto\gui_gtk.pro" />
+    <None Include="proto\gui_gtk_x11.pro" />
+    <None Include="proto\gui_mac.pro" />
+    <None Include="proto\gui_motif.pro" />
+    <None Include="proto\gui_photon.pro" />
+    <None Include="proto\gui_w16.pro" />
+    <None Include="proto\gui_w32.pro" />
+    <None Include="proto\gui_x11.pro" />
+    <None Include="proto\gui_xmdlg.pro" />
+    <None Include="proto\hangulin.pro" />
+    <None Include="proto\hardcopy.pro" />
+    <None Include="proto\hashtab.pro" />
+    <None Include="proto\if_cscope.pro" />
+    <None Include="proto\if_lua.pro" />
+    <None Include="proto\if_mzsch.pro" />
+    <None Include="proto\if_ole.pro" />
+    <None Include="proto\if_perl.pro" />
+    <None Include="proto\if_perlsfio.pro" />
+    <None Include="proto\if_python.pro" />
+    <None Include="proto\if_python3.pro" />
+    <None Include="proto\if_ruby.pro" />
+    <None Include="proto\if_tcl.pro" />
+    <None Include="proto\if_xcmdsrv.pro" />
+    <None Include="proto\main.pro" />
+    <None Include="proto\mark.pro" />
+    <None Include="proto\mbyte.pro" />
+    <None Include="proto\memfile.pro" />
+    <None Include="proto\memline.pro" />
+    <None Include="proto\menu.pro" />
+    <None Include="proto\message.pro" />
+    <None Include="proto\misc1.pro" />
+    <None Include="proto\misc2.pro" />
+    <None Include="proto\move.pro" />
+    <None Include="proto\netbeans.pro" />
+    <None Include="proto\normal.pro" />
+    <None Include="proto\ops.pro" />
+    <None Include="proto\option.pro" />
+    <None Include="proto\os_amiga.pro" />
+    <None Include="proto\os_mac_conv.pro" />
+    <None Include="proto\os_msdos.pro" />
+    <None Include="proto\os_mswin.pro" />
+    <None Include="proto\os_qnx.pro" />
+    <None Include="proto\os_unix.pro" />
+    <None Include="proto\os_vms.pro" />
+    <None Include="proto\os_win16.pro" />
+    <None Include="proto\os_win32.pro" />
+    <None Include="proto\popupmnu.pro" />
+    <None Include="proto\pty.pro" />
+    <None Include="proto\quickfix.pro" />
+    <None Include="proto\regexp.pro" />
+    <None Include="proto\screen.pro" />
+    <None Include="proto\search.pro" />
+    <None Include="proto\sha256.pro" />
+    <None Include="proto\spell.pro" />
+    <None Include="proto\syntax.pro" />
+    <None Include="proto\tag.pro" />
+    <None Include="proto\term.pro" />
+    <None Include="proto\termlib.pro" />
+    <None Include="proto\ui.pro" />
+    <None Include="proto\undo.pro" />
+    <None Include="proto\version.pro" />
+    <None Include="proto\window.pro" />
+    <None Include="proto\workshop.pro" />
+    <None Include="tearoff.bmp" />
+    <None Include="tools.bmp" />
+    <None Include="vim.ico" />
+    <None Include="vim_alert.ico" />
+    <None Include="vim_error.ico" />
+    <None Include="vim_info.ico" />
+    <None Include="vim_quest.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="vim.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
