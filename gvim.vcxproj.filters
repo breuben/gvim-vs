@@ -1,0 +1,521 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\proto">
+      <UniqueIdentifier>{c58f7d1a-4b1d-46db-b4f5-3a5d0dac0850}</UniqueIdentifier>
+	  <Extensions>pro</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vim.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vimio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="feature.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="os_win32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="os_dos.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ascii.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keymap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="term.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="macros.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="option.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="structs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="regexp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ex_cmds.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="proto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="globals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="farsi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="arabic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="version.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gui.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gui_beval.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="if_cscope.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="blowfish.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="buffer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sha256.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="charset.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ex_cmds.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ex_cmds2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ex_docmd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ex_eval.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ex_getln.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="getchar.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="diff.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="digraph.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="edit.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="eval.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fileio.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fold.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hardcopy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hashtab.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mark.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mbyte.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="memfile.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="memline.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="menu.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="message.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="misc1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="misc2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="move.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="popupmnu.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="normal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ops.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="option.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="os_mswin.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="os_win32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="undo.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="quickfix.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="regexp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="screen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="search.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="spell.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="syntax.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tag.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="term.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ui.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="window.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="if_cscope.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="os_w32exe.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gui_beval.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="netbeans.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gui.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pathdef.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="version.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gui_w32.c">
+      <Filter>Header Files\proto</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="proto\if_mzsch.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\if_lua.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\if_cscope.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\hashtab.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\hardcopy.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\hangulin.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\gui_xmdlg.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\gui_x11.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\gui_w16.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\gui_photon.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\gui_motif.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\gui_mac.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\gui_gtk_x11.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\gui_gtk.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\gui_beval.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\gui_athena.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\gui.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\getchar.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\fold.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\fileio.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\ex_getln.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\ex_eval.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\ex_docmd.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\ex_cmds2.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\ex_cmds.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\eval.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\edit.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\digraph.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\diff.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\charset.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\buffer.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\blowfish.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\workshop.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\window.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\version.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\undo.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\ui.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\termlib.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\term.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\tag.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\syntax.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\spell.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\sha256.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\search.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\screen.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\regexp.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\quickfix.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\pty.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\popupmnu.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\os_win32.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\os_win16.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\os_vms.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\os_unix.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\os_qnx.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\os_mswin.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\os_msdos.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\os_mac_conv.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\os_amiga.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\option.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\ops.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\normal.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\netbeans.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\move.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\misc2.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\misc1.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\message.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\menu.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\memline.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\memfile.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\mbyte.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\mark.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\main.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\if_xcmdsrv.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\if_tcl.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\if_ruby.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\if_python3.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\if_python.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\if_perlsfio.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\if_perl.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\if_ole.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="proto\gui_w32.h">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="vim.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="tools_orig.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bitmap1.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="tools.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="silk_toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="gvim.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
