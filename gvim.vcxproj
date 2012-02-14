@@ -73,7 +73,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
     <TargetName>gvim64</TargetName>
-    <OutDir>D:\projects\vim\src\</OutDir>
+    <OutDir>$(SolutionDir)</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -186,7 +186,6 @@
     <ClInclude Include="os_win32.h" />
     <ClInclude Include="proto.h" />
     <ClInclude Include="regexp.h" />
-    <ClInclude Include="resource.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="structs.h" />
     <ClInclude Include="targetver.h" />
@@ -333,6 +332,7 @@
     <None Include="proto\window.pro" />
     <None Include="proto\workshop.pro" />
     <None Include="tearoff.bmp" />
+    <None Include="Toolbar256.bmp" />
     <None Include="tools.bmp" />
     <None Include="vim.ico" />
     <None Include="vim_alert.ico" />

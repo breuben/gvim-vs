@@ -15,7 +15,7 @@
     </Filter>
     <Filter Include="Header Files\proto">
       <UniqueIdentifier>{c58f7d1a-4b1d-46db-b4f5-3a5d0dac0850}</UniqueIdentifier>
-	  <Extensions>pro</Extensions>
+      <Extensions>pro</Extensions>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -88,7 +88,7 @@
     <ClInclude Include="if_cscope.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="resource.h">
+    <ClInclude Include="gui_w32_rc.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -250,7 +250,7 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="gui_w32.c">
-      <Filter>Header Files\proto</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -494,27 +494,36 @@
     <None Include="proto\if_ole.pro">
       <Filter>Header Files\proto</Filter>
     </None>
-    <None Include="proto\gui_w32.h">
-      <Filter>Header Files\proto</Filter>
-    </None>
     <None Include="vim.ico">
-      <Filter>Resource Files</Filter>
-    </None>
-    <None Include="tools_orig.bmp">
-      <Filter>Resource Files</Filter>
-    </None>
-    <None Include="bitmap1.bmp">
       <Filter>Resource Files</Filter>
     </None>
     <None Include="tools.bmp">
       <Filter>Resource Files</Filter>
     </None>
-    <None Include="silk_toolbar.bmp">
+    <None Include="proto\gui_w32.pro">
+      <Filter>Header Files\proto</Filter>
+    </None>
+    <None Include="tearoff.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="vim_alert.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="vim_error.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="vim_info.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="vim_quest.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Toolbar256.bmp">
       <Filter>Resource Files</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="gvim.rc">
+    <ResourceCompile Include="vim.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
   </ItemGroup>
